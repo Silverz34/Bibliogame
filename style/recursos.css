@@ -1,0 +1,10 @@
+
+:root{
+    --color-background-dark: #1A1A1A;      /* Negro muy oscuro, casi grafito */
+    --color-neon-green: #72A33A;           /* Verde neón brillante */             
+    --color-text-light: #CDE97A;
+    --color-button: #A6FA46;
+    --color-accent-dark: #222222;
+
+    --font-family : 'Pixelify Sans', 'Courier New', monospace;
+}

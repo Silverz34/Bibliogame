@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles-Card</title>
     <link rel="stylesheet" href="/style/stylebase.css">
+    <link rel="stylesheet" href="/style/details.css">
 </head>
 <body>
     <header class="main-header">
-        <img src="/media/icono.png" alt="">
+       <div class="logo">
+            <img src="/media/icono.png" alt="" class="logo-img">
+        </div>
         <nav class="top-nav">
             <a href="#" class="game-list-link">Game List ▲</a>
         </nav>
@@ -22,12 +25,12 @@
         <nav class="barra">
             <ul>
                 <li> 
-                   <a href="#" class="juegos">
+                   <a href="/html/index.html" class="nav-item juegos">
                     <img src="/media/game.png" alt="Iconos-Games">Games
                 </a>
                 </li>
                 <li>
-                    <a href="#" class="El-top">
+                    <a href="/html/Ranking.html" class="nav-item El-top">
                         <img src="/media/ranking.png" alt="Icono-Ranking"> Ranking
                     </a>
                 </li>
@@ -37,25 +40,27 @@
 
      <main class="details-game">
         <section class="info-game">
-            <divb class="header-area">
-                <div>
-                    <img src="" alt="">
+            <div class="header-area">
+                <div class="game-cover">
+                    <img src="/media/Minecraft (1).jpeg" alt="">
                 </div>
-                <div class="details">
-                    <h1 class="game-title">title </h1>
-                    <p> creador:....</p>
-                    <div class="game-meta">
-                        <span class="date">
-                            <img src="/media/calendar.png" alt=""> 18/06/2024
-                        </span>
-                    </div>
-                    <button class="Play-button">jugar</button>
+               <div class="game-details">
+                        <h1 class="game-title">Sky: Children of the Light</h1>
+                        <p class="game-developer">Creado por: Thatgamecompany</p>
+                        
+                        <div class="game-meta">
+                            <span class="release-date">
+                                <img src="/media/calendar.png" alt="Calendario">
+                                18/07/2019
+                            </span>
+                        </div>
+                        <button class="play-button">Jugar</button>
                 </div>
 
             </div>
-            <article class="descripccion-game">
-                <h2>Descripcion</h2>
-                <p>...</p>
+            <div class="section"></div>
+            <article class="description-game">
+                <p>Minecraft es un videojuego de tipo "sandbox" o mundo abierto, desarrollado por Mojang Studios y creado originalmente por Markus Persson, conocido como "Notch". Desde su lanzamiento en 2011, se ha convertido en uno de los videojuegos más vendidos de la historia, con más de 300 millones de copias vendidas hasta marzo de 2024</p>
             </article>
             <section class="imagenes-game">
                 <div class="screenshots-grid">
@@ -63,7 +68,6 @@
                     <img src="" alt="imagen2">
                     <img src="" alt="imagen3">
                 </div>
-
             </section>
 
         </section>

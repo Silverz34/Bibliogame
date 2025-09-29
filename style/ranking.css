@@ -1,0 +1,116 @@
+@import url("/style/recursos.css");
+
+.ranking-content {
+    flex-grow: 1;
+    padding: 30px;
+    display: flex; 
+    gap: 30px;
+}
+
+.ranking-visuals {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Estructura de la gráfica Top 3 */
+.top-three-chart {
+    display: flex;
+    align-items: flex-end; /* Alinea las barras a la parte inferior */
+    justify-content: space-around;
+    flex-grow: 1;
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+.rank-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Importante para que el texto se superponga a la barra */
+    position: relative; 
+}
+
+.rank-bar-chart {
+    width: 70px; /* Ancho de las barras */
+    background: linear-gradient(to top, var(--color-neon-green), rgba(57, 255, 20, 0.4));
+    border: 1px solid var(--color-neon-green);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+.rank-one .rank-bar-chart { height: 100%; } /* Puesto 1: Barra completa */
+.rank-two .rank-bar-chart { height: 70%; }  /* Puesto 2: Barra 70% */
+.rank-three .rank-bar-chart { height: 50%; } /* Puesto 3: Barra 50% */
+
+.rank-item .game-info {
+    position: absolute; /* Permite superponer la info en la barra */
+    bottom: 0;
+    width: 100%;
+    /* Estilos del texto y cubierta dentro de la barra */
+    padding-bottom: 10px; 
+    color: var(--color-background-dark); /* Color oscuro para contraste sobre la barra */
+    font-weight: bold;
+}
+
+.rank-badge {
+    background-color: var(--color-neon-green);
+    color: var(--color-background-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    border: 3px solid var(--color-background-dark);
+    box-shadow: 0 0 10px var(--color-neon-green);
+}
+
+/* Tabla de clasificación lateral */
+.leaderboard-table {
+    width: 300px;
+    border-left: 1px solid var(--color-border);
+    padding-left: 30px;
+}
+
+.leaderboard-table h2 {
+    color: var(--color-neon-green);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.ranking-list {
+    list-style: none;
+}
+
+.ranking-entry {
+    background-color: var(--color-accent-dark);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid var(--color-neon-green);
+}
+
+.game-info-list {
+    display: flex;
+    align-items: center;
+}
+
+.game-info-list img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ranking-entry .game-title {
+    font-size: 1em;
+    color: var(--color-text-light);
+}
+
+.ranking-entry .score {
+    color: var(--color-neon-green);
+    font-size: 0.9em;
+}

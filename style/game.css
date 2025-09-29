@@ -1,0 +1,59 @@
+@import url("/style/recursos.css");
+
+
+.game-list {
+    flex-grow: 1; 
+    padding: 30px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 30px;
+}
+
+.game-card {
+    background-color: var(--color-background-dark);
+    border: 1px solid var(--color-border);
+    border-bottom: 3px solid var(--color-neon-green); /* Borde de resalte */
+    overflow: hidden;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(57, 255, 20, 0.3);
+}
+
+.game-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    color: var(--color-text-light);
+    font-size: 1.3em;
+    padding: 10px 10px 5px;
+}
+
+.description, .genre {
+    color: #fff9f9;
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+.game-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-top: 1px dotted var(--color-border);
+}
+.icons-platform img {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+}

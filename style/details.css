@@ -1,0 +1,104 @@
+@import url("/style/recursos.css");
+
+.details-game {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.header-area {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.game-cover img {
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 200px;
+    height: auto;
+    display: block;
+    border: 3px solid var(--color-neon-green);
+}
+
+.game-details {
+    flex-grow: 1;
+    margin-top: 31px;
+}
+
+.game-title {
+    font-size: 2.5em;
+    color: var(--color-text-light);
+    margin-bottom: 5px;
+    font-family: var(--font-family);
+}
+
+.game-developer {
+    color: #AAAAAA;
+    margin-bottom: 20px;
+}
+
+.game-meta {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.release-date img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.play-button {
+    background-color: var(--color-button);
+    color: var(--color-background-dark);
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px var(--color-neon-green);
+    font-family: var(--font-pixel);
+    
+}
+
+.description-game{
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.section{
+    margin : 20px ;
+    height: 10px;
+    background-image: repeating-linear-gradient(
+        90deg,
+        #A6FA46 0px,
+        #A6FA46 6px,
+        transparent 6px,
+        transparent 12px
+    );
+}
+
+.description-game p {
+    margin-right: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--color-text-light);
+}
+
+
+.screenshots-grid {
+    display: flex;
+    gap: 15px;
+    margin-left: 60px;
+}
+
+.screenshots-grid img {
+    width: 30%; /* Ajustar el tamaño para 3 imágenes */
+    height: auto;
+    border: 1px solid var(--color-neon-green);
+}
