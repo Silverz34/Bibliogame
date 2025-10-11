@@ -8,6 +8,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
+.game-list a{
+    text-decoration: none;
+}
 
 .game-grid {
     display: grid;
@@ -61,4 +64,14 @@
     width: 28px;
     height: 28px;
     margin-left: 5px;
+}
+
+.description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+     line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 34px; 
 }

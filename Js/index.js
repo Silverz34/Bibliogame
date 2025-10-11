@@ -9,7 +9,7 @@ import {
 
 
 const createGameCardHTML = (game) => {
-  const platformIcon = game.platform.includes('PC') ? 'windows.png' : 'web.png';
+  const platformIcon = game.platform.includes('PC') ? 'windows.png' : 'Browser.png';
 const genreText = game.genre || 'Desconocido';
  return `
   <a href="/html/DetallesGame.html?id=${game.id}" class="game-link-wrapper">
