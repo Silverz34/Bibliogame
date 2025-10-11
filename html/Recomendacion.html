@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking-game</title>
+    <title>Recomendación de Juego</title>
     <link rel="stylesheet" href="/style/stylebase.css">
-    <link rel="stylesheet" href="/style/ranking.css">
-</head>
+    <link rel="stylesheet" href="/style/recomendacion.css"> 
+    <script type="module" src="/Js/Recomendacion.js"></script> </head>
 <body>
     <header class="main-header">
         <div class="logo">
             <img src="/media/icono.png" alt="" class="logo-img">
         </div>
-        <nav class="top-nav">
-            <div class="filter-container"> 
-                <select id ="genero-select" class="game-list-link">
-                    <option value="" id="game-result-container">cargar generos..</option>   
-                </select>
-            </div>
-       </nav>
         <div class="user-actions">
             <a href="#" class="log-in-btn">Log In</a>
             <a href="#" class="join-free-btn">Join Free</a>
@@ -35,13 +28,26 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/html/Ranking.html" class="nav-item El-top">
-                            <img src="/media/ranking.png" alt="Icono-Ranking"> Ranking
+                        <a href="/html/Recomendacion.html" class="nav-item El-top"> 
+                            <img src="/media/ranking.png" alt="Icono-Ranking"> Recomiéndame
                         </a>
                     </li>
                 </ul>
             </nav>
         </aside>
+
+        <main class="recommendation-view">
+            <h2 class="view-title">¿Qué jugamos hoy?</h2>
+            <p class="instruction-text" id="instruction-text">
+                ¡Presiona el botón para revolver el mazo y encontrar un juego gratis para ti!
+            </p>
+            
+            <button class="recommend-button" id="recommend-button">
+                ¡Revolver Mazo!
+            </button>
+            
+            <div id="game-card-container" class="game-card-container"></div>
+        </main>
     </div>
 </body>
 </html>
