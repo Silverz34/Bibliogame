@@ -6,6 +6,8 @@
     <title>Gamer-Tag - Lista de Juegos</title>
     <link rel="stylesheet" href="/style/stylebase.css">
     <link rel="stylesheet" href="/style/game.css">
+    <script type="module" src="/Js/index.js"></script>
+    
 </head>
 <body>
     <header class="main-header">
@@ -13,36 +15,39 @@
             <img src="/media/icono.png" alt="" class="logo-img">
         </div>
         <nav class="top-nav">
-            <a href="#" class="game-list-link">Game List ▲</a>
+            <div class="filter-container"> 
+            <select id ="genero-select" class="game-list-link">
+                <option value="" id="game-result-container">cargar generos..</option>   
+            </select>
+            </div>
         </nav>
         <div class="user-actions">
             <a href="#" class="log-in-btn">Log In</a>
             <a href="#" class="join-free-btn">Join Free</a>
         </div>
-    </header>
+   </header>
    <div class="Contenido">
-     <aside class="sidebear">
-        <nav class="barra">
-            <ul>
-                <li> 
-                   <a href="/html/index.html" class="nav-item juegos">
-                    <img src="/media/game.png" alt="Iconos-Games">Games
-                </a>
-                </li>
-                <li>
-                    <a href="/html/Ranking.html" class="nav-item El-top">
-                        <img src="/media/ranking.png" alt="Icono-Ranking"> Ranking
-                    </a>
-                </li>
-            </ul>
-        </nav>
-     </aside>
-     <main class="game-list">
-        <section class="game-grid">
-            <a href="/html/DetallesGame.html">
-                <article class="game-card">
+        <aside class="sidebear">
+            <nav class="barra">
+                <ul>
+                    <li> 
+                        <a href="/html/index.html" class="nav-item juegos">
+                            <img src="/media/game.png" alt="Iconos-Games">Games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/html/Ranking.html" class="nav-item El-top">
+                            <img src="/media/ranking.png" alt="Icono-Ranking"> Ranking
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+     <main class="game-list" id="game-result">
+           <article class="game-card">
+                <a href="/html/DetallesGame.html"></a>
                     <div class="game-cover">
-                        <img src="/media/Minecraft (1).jpeg" alt="portada-juego">
+                        <img src="/media/Minecraft (1).jpeg" alt="portada-juego" id="img-cover">
                     </div>
                     <h3 class="title">Minecraft</h3>
                     <p class="description">Lorem iptsum lalalalalalalala</p>
@@ -50,14 +55,7 @@
                         <span class="genre">Genero juego</span>
                         <div class="icons-platform"><img src="/media/windows.png" alt="Icono-Estrella"></div>
                     </div>
-                </article>
-                <article class="game-card">...</article>
-                <article class="game-card">...</article>
-                <article class="game-card">...</article>
-                <article class="game-card">...</article>
-            </a>
-           
-        </section>
+            </article>
      </main>
    </div>
 </body>
